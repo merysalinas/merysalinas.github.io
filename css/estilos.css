@@ -1,0 +1,151 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #dd95c2 0%, #adecb3 100%);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background: #ee4f1e;
+    color: #fff;
+    padding: 0px 0 0px 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 0px;
+}
+
+header p {
+    margin: 0px 0 0 0;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: #121312;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #ecdd08;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section h2 {
+    text-align: center;
+    color: #eb0c0c;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.productos>.productos {
+    background: #fff3e0;
+    border-radius: 0px;
+    box-shadow: 0 2px 0px rgba(50, 50, 30, 0.08);
+    padding: 5px;
+    width: 325px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.productos>.productos:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 4px 12px rgba(255, 112, 67, 0.18);
+}
+
+.productos img {
+    width: 275px;
+    height: 165px;
+    object-fit: cover;
+    border-radius: 2px;
+    margin-bottom: 2px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+.productos h3 {
+    margin: 0px 0 0px 0;
+    color: #ff7043;
+    font-size: 1.2em;
+}
+
+.productos p {
+    margin: 3px 0;
+    font-size: 1em;
+    text-align: center;
+}
+
+.productos p:last-child {
+    font-weight: bold;
+    color: #d84315;
+}
+
+footer {
+    background: #ff7043;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0 5px 0;
+    margin-top: 5px;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 900px) {
+    .productos {
+        gap: 18px;
+    }
+
+    .productos>.productos {
+        width: 45vw;
+        min-width: 100px;
+    }
+}
+
+@media (max-width: 600px) {
+    .productos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .productos>.productos {
+        width: 40vw;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    section h2 {
+        font-size: 1.3em;
+    }
+}
